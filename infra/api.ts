@@ -6,7 +6,11 @@ export const api = new sst.aws.Function("MyApi", {
   url: true,
   link: [rds],
   handler: "apps/api/src/main.handler",
-  copyFiles: [{ from: "node_modules/.prisma/client/" }],
+  copyFiles: [
+    {
+      from: "node_modules/.prisma/client/",
+    },
+  ],
   environment: {
     DATABASE_URL,
   },

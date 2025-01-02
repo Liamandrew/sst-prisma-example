@@ -98,6 +98,16 @@ To develop all apps and packages, run the following command:
 yarn run dev
 ```
 
+### SST
+
+```bash
+npx sst deploy
+
+npx sst tunnel
+
+npx sst shell --target Prisma -- npx prisma migrate deploy
+```
+
 ## Useful Links
 
 Learn more about the power of Turborepo:
